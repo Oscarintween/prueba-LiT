@@ -1,0 +1,68 @@
+h2{
+    margin-left: 180px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+#functional-input{
+    width: 213px;
+    height: 38px;
+    margin-left: 182px;
+}
+#seniority-input{
+    width:188px;
+    height: 38px;
+    margin-left: 32px;
+}
+#perks-input{
+    height:38px;
+    margin-left: 32px;
+}
+#location-input{
+    height:38px;
+    margin-left: 38px;
+}
+.line-break{
+    display: block;
+    margin-top: 20px;
+    margin-left: 182px;
+    width: 1080px;
+    height: 0.5px;
+    background-color: #555555;
+    
+}
+#keywords-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+#keywords-input{
+    margin-left: 182px;
+    width: 674px;
+    height: 38px;
+}
+.order-by-container{
+    display: flex;
+    margin-right: 180px;
+}
+.recent{
+    background: rgba(234, 153, 163,0.3);
+    width:68px;
+    height: 38px;
+    border: 1px solid #EA99A3;
+    color: #EA99A3;
+}
+.companies-az{
+    background: rgba(234, 153, 163,0.3);
+    width:121px;
+    height: 38px;
+    border: 1px solid #EA99A3;
+    color: #EA99A3;
+}
+::placeholder{
+    padding-left: 10px;
+    color: #A3A3A3;
+    font-size: 14px;
+    font-weight: 400;
+}
