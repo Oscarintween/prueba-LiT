@@ -10,7 +10,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
+
 const navigate = useNavigate()
+console.log(jobInfo)
 
 
   return (
@@ -23,7 +25,7 @@ const navigate = useNavigate()
         <SearchBar />
         {
           jobInfo.map((job,index)=>(
-            <div key = {index} onClick={()=>navigate(`/${job.id}`)}>
+            <div id='job-card' key = {index} onClick={()=>navigate(`/${job.id}`)}>
             <JobCard 
               companyName = {job["Company Name"]}  
               jobTitle = {job["Job Title"]}

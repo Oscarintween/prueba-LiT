@@ -26,8 +26,8 @@ h2{
 .line-break{
     display: block;
     margin-top: 20px;
-    margin-left: 182px;
-    width: 1080px;
+    margin-left: 180px;
+    margin-right: 180px;
     height: 0.5px;
     background-color: #555555;
     
@@ -47,6 +47,8 @@ h2{
     margin-right: 180px;
 }
 .recent{
+    cursor: pointer;
+    margin-left: 15px;
     background: rgba(234, 153, 163,0.3);
     width:68px;
     height: 38px;
@@ -54,7 +56,8 @@ h2{
     color: #EA99A3;
 }
 .companies-az{
-    background: rgba(234, 153, 163,0.3);
+    cursor: pointer;
+    margin-left: 15px;
     width:121px;
     height: 38px;
     border: 1px solid #EA99A3;

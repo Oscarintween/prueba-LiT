@@ -4,29 +4,43 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 .dashboard__ul{
     display: flex;
     list-style: none;
-    margin-right: 180px;
 }
 .dashboard__ul li{
     margin-left: 30px;
     font-size: 16px;
+    cursor: pointer;
 }
 #dashboard__lit-logo{
     width: 60px;
     height: 60px;
     margin-left: 180px;
 }
+.dashboard__envolope{
+    width: 21px;
+    height: 20px;
+}
 .dashboard__more-icon{
+    margin-top: 30px !important;
+    margin-right: 180px;
     width: 8px;
     height: 8px;
     cursor: pointer;
 }
+.more{
+    display: flex;
+}
+.lit-recruit img{
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+}
+
 #dashboard__profile-pic{
-    display: block;
     background-color: #C4C4C4;
     width: 40px;
     height: 40px;

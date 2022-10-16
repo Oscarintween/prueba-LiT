@@ -10,7 +10,7 @@ const Navbar = () => {
         <li className='navbar__li'>Chapters</li>
         <li className='navbar__li'>Blog</li>
         <li className='navbar__li'>Tiendita</li>
-        <li className='navbar__li'><button>Donate</button></li>
+        <li className='navbar__li'><button className='donate-button'>Donate</button></li>
       </ul>
     </div>
   )

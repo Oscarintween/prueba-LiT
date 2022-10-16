@@ -1,0 +1,12 @@
+.back-to-jobs{
+    height: 30px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.back-to-jobs h1{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 180px;
+}

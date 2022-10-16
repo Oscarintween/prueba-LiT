@@ -4,3 +4,6 @@
 body{
     background-color: #F4F4F4;
 }
+#job-card{
+    cursor: pointer;
+}
