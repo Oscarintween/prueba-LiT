@@ -42,6 +42,17 @@ const SearchBar = ({jobsInfo}) => {
     setFilteredData(filteredData)
   }
 
+  const handleKeywordsChange = (e)=>{
+    const userInput = e.target.value
+    const filteredData = jobsInfo.filter((job)=>{
+      return job["Company Name"].toLowerCase().includes(userInput.toLowerCase())
+       || job["Job Title"].toLowerCase().includes(userInput.toLowerCase())
+       || job["Functional Area"].toLowerCase().includes(userInput.toLowerCase())
+        
+    })
+    setFilteredData(filteredData)
+  }
+
 
   return (
     <div>
@@ -84,6 +95,7 @@ const SearchBar = ({jobsInfo}) => {
             <input 
             id='keywords-input' 
             placeholder='Keywords'
+            onChange={handleKeywordsChange}
             />
           </div>
           <div className='order-by-container'>

@@ -71,7 +71,7 @@ const JobDetails = () => {
         <div>
           <h1>About The Company</h1>
           <p>As the first all-in-one virtual venue for live online events, Hopin brings people together in a highly interactive and engaging online experience that feels just like an in-person event, only without the barriers. Whether it’s a 50-person meetup, or a 50,000-person conference—any type of event organizer can host a Hopin As the first all-in-one virtual venue for live online events, Hopin brings people together in a highly interactive and engaging online experience that feels just like an in-person event, only without the barriers. Whether it’s a 50-person meetup, or a 50,000-person conference—any type of event organizer can host a Hopin.</p>
-          <button className='see-profile-button'>See Company profile</button>
+          <a href={jobDetails[0].URL}><button className='see-profile-button'>See Company profile</button></a>
         </div>
         <div className='grey-rectangle'>
         </div> 

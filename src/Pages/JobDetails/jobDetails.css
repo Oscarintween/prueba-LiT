@@ -140,6 +140,11 @@
     color: #EA99A3;
     font-size: 16px;
     font-weight: 700;
+    cursor:pointer;
+}
+.see-profile-button:hover{
+    background-color: #EA99A3;
+    color: #FFFFFF;
 }
 .similar-jobs{
     margin-top: 139px;

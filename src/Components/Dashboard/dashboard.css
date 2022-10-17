@@ -19,6 +19,7 @@
     width: 60px;
     height: 60px;
     margin-left: 180px;
+    cursor: pointer;
 }
 .dashboard__envolope{
     width: 21px;

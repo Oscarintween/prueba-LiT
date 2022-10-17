@@ -5,7 +5,9 @@ const Dashboard = () => {
   return (
     <div id='dashboard-container'>
       <div className="dashboard__lit-logo">
-        <img id='dashboard__lit-logo' src="https://latinasintech.org/wp-content/uploads/2019/11/Logo_LiT-1.png" alt="" />
+        <a href="/">
+          <img id='dashboard__lit-logo' src="https://latinasintech.org/wp-content/uploads/2019/11/Logo_LiT-1.png" alt="LiT logo" />
+        </a>
       </div>
       <div className="dashboard__menu">
         <ul className='dashboard__ul'>
