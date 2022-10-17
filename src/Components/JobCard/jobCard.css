@@ -37,3 +37,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.badges img{
+    width: 52px;
+    height: 58px;
+    margin-left: 16px;
+}

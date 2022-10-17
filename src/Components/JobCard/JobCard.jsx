@@ -23,9 +23,10 @@ const JobCard = (props) => {
         <p className='location'>{props.location}</p>
         <p className='seniority'>{props.seniority}</p>
       </div>
-      <div>
-        <p>picture</p>
-        <p>picture</p>
+      <div className='badges'>
+        <img src="https://www.linkpicture.com/q/Perk-Women-in-Tech.png" alt="women in tech" />
+        <img src="https://www.linkpicture.com/q/Perk-Remote-Friendly.png" alt="latinx in tech" />
+        <img src="https://www.linkpicture.com/q/Perk-Latinx-in-Tech.png" alt="remote-friendly" />
       </div>
     </div>
   )

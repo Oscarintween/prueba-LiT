@@ -32,8 +32,11 @@ const JobDetails = () => {
           </div>
         </div>
 
-        <div>
-          badges
+        <div className='badges'>
+          <img src="https://www.linkpicture.com/q/Perk-Women-in-Tech.png" alt="women in tech" />
+          <img src="https://www.linkpicture.com/q/Perk-Remote-Friendly.png" alt="latinx in tech" />
+          <img src="https://www.linkpicture.com/q/Perk-Latinx-in-Tech.png" alt="remote-friendly" />
+          <img src="https://www.linkpicture.com/q/Perk-Remote-Friendly_1.png" alt="unlimited-vacation" />
         </div>
       </div>
 
