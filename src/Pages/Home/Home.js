@@ -4,14 +4,10 @@ import './Home.css';
 import Navbar from '../../Components/Navigation/Navbar';
 import Dashboard from '../../Components/Dashboard/Dashboard'
 import SearchBar from '../../Components/SearchBar/SearchBar'
-import JobCard from '../../Components/JobCard/JobCard';
-import { useNavigate } from 'react-router-dom';
 
 
 
 function Home() {
-
-const navigate = useNavigate()
 console.log(jobInfo)
 
 
@@ -22,23 +18,7 @@ console.log(jobInfo)
         <Dashboard />
       </header>
       <main>
-        <SearchBar />
-        {
-          jobInfo.map((job,index)=>(
-            <div id='job-card' key = {index} onClick={()=>navigate(`/${job.id}`)}>
-            <JobCard 
-              companyName = {job["Company Name"]}  
-              jobTitle = {job["Job Title"]}
-              time = {job.Time}
-              type = {job["Job Type"]}
-              location = {job["Location Full"]}
-              seniority = {job.Seniority}
-            />
-            </div>
-            
-          ))
-        }
-        
+        <SearchBar jobsInfo={jobInfo} />
       </main>
     </div>
   );

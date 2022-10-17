@@ -1,7 +1,48 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './searchBar.css'
+import { useNavigate } from 'react-router-dom'
+import JobCard from '../JobCard/JobCard'
 
-const SearchBar = () => {
+const SearchBar = ({jobsInfo}) => {
+
+  const navigate = useNavigate()
+  const [filteredData,setFilteredData]= useState(jobsInfo)
+  
+  const handleFunctionalChange = (e)=>{
+    const userInput = e.target.value
+    const filteredData = jobsInfo.filter((job)=>{
+      return job["Functional Area"].toLowerCase().includes(userInput.toLowerCase())
+    })
+    setFilteredData(filteredData)
+  }
+
+  const handleSeniorityChange = (e)=>{
+    const userInput = e.target.value
+    const filteredData = jobsInfo.filter((job)=>{
+      return job["Seniority"].toLowerCase().includes(userInput.toLowerCase())
+    })
+    setFilteredData(filteredData)
+  }
+
+  // const handlePerksChange = (e)=>{
+  //   const userInput = e.target.value
+  //   const filteredData = jobsInfo.filter((job)=>{
+  //     return job.Perks.toLowerCase().includes(userInput.toLowerCase())
+  //   })
+  //   setFilteredData(filteredData)
+  // }
+
+  
+
+  const handleLocationChange = (e)=>{
+    const userInput = e.target.value
+    const filteredData = jobsInfo.filter((job)=>{
+      return job["Location Full"].toLowerCase().includes(userInput.toLowerCase())
+    })
+    setFilteredData(filteredData)
+  }
+
+
   return (
     <div>
       <div id='Search-filter'>
@@ -9,22 +50,30 @@ const SearchBar = () => {
         <form>
           <input 
             id='functional-input'
-            placeholder='Functional Area'>
+            placeholder='Functional Area'
+            onChange={handleFunctionalChange}
+            >
           </input>
 
           <input
             id='seniority-input'
-            placeholder='Seniority'>
+            placeholder='Seniority'
+            onChange={handleSeniorityChange}
+          >
           </input>
 
           <input
           id='perks-input' 
-          placeholder='Perks'>
+          placeholder='Perks'
+          // onChange={handlePerksChange}
+          >
           </input>
 
           <input
           id='location-input'
-          placeholder='Location'>
+          placeholder='Location'
+          onChange={handleLocationChange}
+          >
           </input>
 
         </form>
@@ -43,8 +92,24 @@ const SearchBar = () => {
             <button className='square-button companies-az'>Companies A-Z</button>
           </div>
         </div>
-        
-       
+      </div>
+      <div>
+      {
+          
+          filteredData.map((job,index)=>(
+            <div id='job-card' key = {index} onClick={()=>navigate(`/${job.id}`)}>
+            <JobCard 
+              companyName = {job["Company Name"]}  
+              jobTitle = {job["Job Title"]}
+              time = {job.Time}
+              type = {job["Job Type"]}
+              location = {job["Location Full"]}
+              seniority = {job.Seniority}
+            />
+            </div>
+            
+          ))
+        }
       </div>
     </div>
     

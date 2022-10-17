@@ -46,8 +46,16 @@ const JobDetails = () => {
           </div>
           {}
            <div className='contingency-warning'>
-              <p>This may be a contingent job offer. For more information on Contingency Jobs, please read this article:
-                <span>“Contingency Jobs: Pros and Cons. All you Need to Know if They Suit Your Professional Goals.”</span></p>
+            <div className='warning'>
+              <img className='warning-1' src="https://www.linkpicture.com/q/_16.png" alt="" />
+              <img className='warning-2' src="https://www.linkpicture.com/q/Vector-5_1.png" alt="warning" />
+            </div>
+            <div>
+            <p>This may be a contingent job offer. For more information on Contingency Jobs, please read this article:
+              <span>“Contingency Jobs: Pros and Cons. All you Need to Know if They Suit Your Professional Goals.”</span>
+            </p>
+            </div>
+              
            </div>
            <button className='apply-button'>Apply</button>
         </div>  
